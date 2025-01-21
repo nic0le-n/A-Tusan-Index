@@ -104,7 +104,7 @@ body{
     z-index:2;
 }
 
-.timeline-item p{
+.timeline p{
     font-family: Helvetica, sans-serif;
     font-size: 12px;
     text-align:center;
@@ -112,7 +112,7 @@ body{
     margin: 5px;
 }
 
-.timeline-item h3{
+.timeline h3{
     font-family: Helvetica, sans-serif;
     font-size: 12px;
     font-style: bold;
