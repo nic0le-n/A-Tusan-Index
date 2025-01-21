@@ -74,7 +74,7 @@
     overflow-x: auto;
     margin-top: 60px;
     margin-left: 30px;
-    margin-right: 40esapx;
+    margin-right: 30px;
     margin-bottom: 30px;
     gap: 20px;
 }
@@ -94,4 +94,22 @@
 
 body{
     margin: 0px;
+}
+
+.overview{
+    margin: 50px;
+    padding-top: 2px;
+}
+
+.overview h1{
+    font-family: "league-gothic", sans-serif;
+    font-weight: 400;
+    line-height: 0px;
+    font-style: normal;
+    font-size: 100px;
+    color: rgb(0, 0, 0);
+}
+
+.overview p{
+    font-family: Helvetica, sans-serif;
 }
