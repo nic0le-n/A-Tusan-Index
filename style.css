@@ -1,3 +1,7 @@
+body{
+    margin: 0px;
+}
+
 .header-container{
     margin: 0px;
     position: relative;
@@ -72,14 +76,22 @@
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;
+    max-height: fit-content;
     margin-top: 60px;
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 30px;
     gap: 20px;
+    height: 410px;
 }
 
-.timeline img{
+.timeline-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-item img{
     width: auto;
     height: 300px;
     border-radius: 10px;
@@ -87,18 +99,31 @@
     scale: .9;
 }
 
-.timeline img:hover{
+.timeline-item img:hover{
     transform: scale(1.1);
     z-index:2;
 }
 
-body{
-    margin: 0px;
+.timeline-item p{
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    text-align:center;
+    width: 85%;
+    margin: 5px;
+}
+
+.timeline-item h3{
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: bold;
+    text-align:center;
+    width: 80%;
+    margin: 5px;
 }
 
 .overview{
     margin: 50px;
-    padding-top: 2px;
+    padding-top: 0px;
 }
 
 .overview h1{
