@@ -141,3 +141,19 @@ body{
 p{
     font-family: Helvetica, sans-serif;
 }
+
+.overview a{
+    text-decoration: none;
+    color: black;
+}
+.overview a:hover{
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+.header-container a{
+    text-decoration: none;
+    color: white;
+}
