@@ -140,6 +140,8 @@ body{
 
 p{
     font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 .overview a{
