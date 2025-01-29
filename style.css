@@ -1,52 +1,40 @@
-body{
+body, .header-container {
     margin: 0px;
 }
 
-.header-container{
-    margin: 0px;
+.header-container {
     position: relative;
 }
 
-.header-top-left {
+.header-top-left, .header-top-right1, .header-top-right2 {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    font-family: Helvetica, sans-serif;
+    font-family: "elza-text", sans-serif;
+    font-weight: 300;
     font-size: 16px;
     color: white;
-  }
+}
 
-.header-top-left:hover{
-    font-style: italic;
+.header-top-left {
+    top: 30px;
+    left: 30px;
+}
+
+.header-top-right1, .header-top-right2 {
+    right: 30px;
 }
 
 .header-top-right1 {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-family: Helvetica, sans-serif;
-    font-size: 16px;
-    color: white;
-  }
-
-  .header-top-right1:hover{
-    font-style: italic;
+    top: 60px;
 }
 
-  .header-top-right2 {
-    position: absolute;
-    top: 40px;
-    right: 20px;
-    font-family: Helvetica, sans-serif;
-    font-size: 16px;
-    color: white;
-  }
-
-  .header-top-right2:hover{
-    font-style: italic;
+.header-top-right2 {
+    top: 30px;
 }
 
-.header-container img{
+.header-top-left:hover, .header-top-right1:hover, .header-top-right2:hover {
+    font-style: italic;
+}
+.header-container img {
     width: 100%;
     filter: brightness(50%) contrast(150%);
 }
@@ -71,94 +59,106 @@ body{
     width: 100%;
   }
 
-.timeline{
+.timeline {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;
     max-height: fit-content;
-    margin-top: 60px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin: 60px 30px 30px;
     gap: 20px;
     height: 410px;
 }
 
-.timeline-item{
+.timeline-item {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.timeline-item img{
+.timeline-item img {
     width: auto;
     height: 300px;
     border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
     transition: 0.5s;
-    scale: .9;
+    scale: 0.9;
     position: relative;
 }
 
-.timeline-item img:hover{
+.timeline-item img:hover {
     transform: scale(1.1);
-    z-index:2;
+    z-index: 2;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-
-.timeline p{
-    font-family: Helvetica, sans-serif;
-    font-size: 12px;
-    text-align:center;
+.timeline p,
+.timeline h3 {
+    font-family: "elza-text", sans-serif;
+    text-align: center;
     width: 85%;
     margin: 5px;
 }
 
-.timeline h3{
-    font-family: Helvetica, sans-serif;
+.timeline p {
+    font-weight: 300;
     font-size: 12px;
-    font-style: bold;
-    text-align:center;
-    width: 80%;
-    margin: 5px;
 }
 
-.overview{
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 30px;
+.timeline h3 {
+    font-weight: 1000;
+    font-size: 12px;
+    width: 80%;
+}
+.overview {
+    margin: 50px 50px 30px;
     padding-top: 0px;
 }
 
-.overview h1{
+.overview h1 {
     font-family: "league-gothic", sans-serif;
     font-weight: 400;
     line-height: 0px;
     font-style: normal;
     font-size: 100px;
     color: rgb(0, 0, 0);
+    margin-top: 90px;
 }
 
-p{
-    font-family: Helvetica, sans-serif;
+p {
+    font-family: "elza-text", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 20px;
+    padding: 0px 30px 0px;
 }
 
-.overview a{
+.overview a {
+    font-family: "elza-text", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
     text-decoration: none;
     color: black;
 }
-.overview a:hover{
+
+.overview a[href="https://monthlyreview.org/2018/03/01/the-expropriation-of-nature/#lightbox/0/:~:text=Between%201849%20and,leave%20the%20islands."],
+.overview a[href="https://www.tusanaje.org/ser-tusan/"] {
+    font-weight: 300;
+}
+
+.overview a:hover {
     font-style: italic;
-    text-decoration: none;
     color: white;
     background-color: black;
 }
 
-.header-container a{
+.header-container a {
     text-decoration: none;
     color: white;
+}
+
+.overview-text {
+    padding: 20px 5px 20px;
+    border-radius: 10px;
 }

@@ -1,52 +1,45 @@
-body{
+body, .header-container {
     margin: 0px;
 }
 
-.header-container{
-    margin: 0px;
+.header-container {
     position: relative;
 }
 
-.header-top-left {
+.header-container a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-top-left, .header-top-right1, .header-top-right2 {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    font-family: Helvetica, sans-serif;
+    font-family: "elza-text", sans-serif;
+    font-weight: 300;
     font-size: 16px;
     color: white;
-  }
+}
 
-.header-top-left:hover{
-    font-style: italic;
+.header-top-left {
+    top: 30px;
+    left: 30px;
+}
+
+.header-top-right1, .header-top-right2 {
+    right: 30px;
 }
 
 .header-top-right1 {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-family: Helvetica, sans-serif;
-    font-size: 16px;
-    color: white;
-  }
-
-  .header-top-right1:hover{
-    font-style: italic;
+    top: 60px;
 }
 
-  .header-top-right2 {
-    position: absolute;
-    top: 40px;
-    right: 20px;
-    font-family: Helvetica, sans-serif;
-    font-size: 16px;
-    color: white;
-  }
-
-  .header-top-right2:hover{
-    font-style: italic;
+.header-top-right2 {
+    top: 30px;
 }
 
-.header-container img{
+.header-top-left:hover, .header-top-right1:hover, .header-top-right2:hover {
+    font-style: italic;
+}
+.header-container img {
     width: 100%;
     filter: brightness(50%) contrast(150%);
 }
@@ -71,13 +64,9 @@ body{
     width: 100%;
   }
 
-  .header-container a{
-    text-decoration: none;
-    color: white;
-}
-
 p{
-    font-family: Helvetica, sans-serif;
+    font-family: "elza-text", sans-serif;
+    font-weight: 300;
 }
 
 .english{
@@ -100,7 +89,8 @@ h3{
 }
 
 a{
-    font-family: Helvetica, sans-serif;
+    font-family: "elza-text", sans-serif;
+    font-weight: 300;
     text-decoration: none;
     color: black;
 }
