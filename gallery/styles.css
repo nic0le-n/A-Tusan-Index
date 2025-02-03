@@ -158,3 +158,19 @@ body, .header-container {
 .close:focus {
     color: #bbb;
 }
+
+@media (max-width: 768px) {
+    .gallery{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .gallery p,
+    .gallery h3 {
+        text-align: center;
+        width: 90vw;
+        margin: 5px;
+    }
+}
